@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const ImageGallery = ({ images }) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -16,8 +17,10 @@ const ImageGallery = ({ images }) => {
       <div className="gallery-grid">
         {currentImages.map((image) => (
           <div key={image.id} className="image-item">
-            <img src={image.src} alt={image.title} />
-            <p>{image.title}</p>
+            {/* Envolvendo a imagem com o Link */}
+            <Link to={`/image/${image.id}`}>
+              <img src={image.src} alt={image.title} />
+            </Link>
           </div>
         ))}
       </div>
