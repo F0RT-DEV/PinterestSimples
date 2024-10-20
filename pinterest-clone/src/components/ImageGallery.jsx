@@ -5,6 +5,9 @@ const ImageGallery = ({ images }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const imagesPerPage = 9;
 
+  // Calculando o total de páginas
+  const totalPages = Math.ceil(images.length / imagesPerPage);
+
   const indexOfLastImage = currentPage * imagesPerPage;
   const indexOfFirstImage = indexOfLastImage - imagesPerPage;
   const currentImages = images.slice(indexOfFirstImage, indexOfLastImage);
@@ -24,9 +27,14 @@ const ImageGallery = ({ images }) => {
           </div>
         ))}
       </div>
+
       <div className="pagination">
-        <button onClick={handlePrevPage} disabled={currentPage === 1}>Página Anterior</button>
-        <button onClick={handleNextPage} disabled={indexOfLastImage >= images.length}>Próxima Página</button>
+        <button onClick={handlePrevPage} disabled={currentPage === 1}>
+          Página Anterior
+        </button>
+        <button onClick={handleNextPage} disabled={currentPage === totalPages}>
+          Próxima Página
+        </button>
       </div>
     </div>
   );

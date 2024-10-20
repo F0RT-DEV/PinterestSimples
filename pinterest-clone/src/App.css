@@ -71,12 +71,6 @@ nav ul li a:hover {
   height: auto;
   display: block;
 }
-h1{
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  margin: 0px 0px 0px 800px;
-}
 
 .image-item p {
   padding: 10px;
@@ -127,29 +121,31 @@ h1{
 }
 
 .image-detail {
-  margin-left: 450px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
   padding: 20px;
-  gap: 20px; /* Espaçamento entre imagem e descrição */
+  gap: 20px; 
 }
 
 .image-detail img {
-  width: 80%; /* Define o tamanho da imagem para 60% do container */
-  max-width: 1000px; /* Limita a largura máxima da imagem */
+  width: 50%; 
+  max-width: 1000px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .image-detail h1 {
-  align-items: center;
   font-size: 2rem;
-  margin: 10px 10px 10px 430px;
   color: #333;
+  margin-bottom: 10px; 
+  align-items: center;
 }
 
 .image-detail p {
-  width: 60%;
+  width: 50%;
   font-size: 1.2rem;
   color: #555;
   line-height: 1.6;
-  font-style:italic;
+  font-style: italic;
 }
