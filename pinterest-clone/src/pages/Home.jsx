@@ -9,6 +9,15 @@ const imagesNatureza = [
     { id: 4, src: '/Natureza4.jpg' },
     { id: 5, src: '/Natureza5.jpg' },
     { id: 6, src: '/Natureza6.jpg' },
+    { id: 7, src: '/Natureza7.jpg' },
+    { id: 8, src: '/Natureza8.jpg' },
+    { id: 9, src: '/Natureza9.jpg' },
+    { id: 10, src: '/Natureza10.jpg' },
+    { id: 11, src: '/Natureza11.jpg' },
+    { id: 12, src: '/Natureza12.jpg' },
+    { id: 13, src: '/Natureza13.jpg' },
+    { id: 14, src: '/Natureza14.jpg' },
+    { id: 15, src: '/Natureza15.jpg' },
 ];
 
 const imagesTecnologia = [
