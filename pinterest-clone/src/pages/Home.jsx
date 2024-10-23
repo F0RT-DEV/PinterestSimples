@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Pagination from '../components/Pagination';
-import { Link } from 'react-router-dom'; // Para navegação entre imagens
+import { Link } from 'react-router-dom'; 
 
 const imagesNatureza = [
   { id: 1, src: '/Natureza1.jpg' },

@@ -8,7 +8,8 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.7;
+  height: 105vh;
 }
 
 nav {
@@ -81,7 +82,7 @@ nav ul li a:hover {
 
 .pagination {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .pagination button {
@@ -89,7 +90,7 @@ nav ul li a:hover {
   color: #fff;
   border: none;
   padding: 10px 20px;
-  margin: 0 5px;
+  margin: 5px 5px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
