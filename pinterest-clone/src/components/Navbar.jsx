@@ -5,7 +5,9 @@ const Navbar = () => {
   return (
     <nav>
       <div className="logo">
-        <Link to="/">Logo</Link>
+      <Link to="/">
+          <img src="/LogoGaleria.webp" alt="Logo" /> {/* Ajuste o caminho e tamanho conforme necessário */}
+        </Link>
       </div>
       <ul>
         <li><Link to="/">Home</Link></li>

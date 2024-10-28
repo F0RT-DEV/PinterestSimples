@@ -21,11 +21,14 @@ nav {
   border-bottom: 1px solid #ddd;
 }
 
-nav .logo a {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
+.logo img {
+  height: 50px; /* Tamanho da logo */
+  width: auto; /* Preserva a proporção */
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
 }
 
 nav ul {
@@ -171,6 +174,14 @@ nav ul li a:hover {
     margin-top: 1rem;
   }
 
+  .logo {
+    margin: 1rem 0;
+  }
+
+  .logo a {
+    font-size: 1.8rem; /* Diminui ligeiramente para tablets */
+  }
+
   .gallery-grid {
     grid-template-columns: repeat(3, minmax(200px, 1fr));
   }
@@ -195,6 +206,14 @@ nav ul li a:hover {
 
   .image-detail p {
     width: 90%;
+  }
+
+  .logo {
+    margin: 1rem 0;
+  }
+
+  .logo a {
+    font-size: 1.5rem; /* Ajuste adicional para melhorar a visualização em celulares */
   }
 
   nav ul {
@@ -226,6 +245,14 @@ nav ul li a:hover {
     margin-top: 1rem;
   }
 
+  .logo {
+    text-align: center; /* Centraliza a logo para telas menores */
+    margin: 0.5rem 0;
+  }
+
+  .logo a {
+    font-size: 1.2rem; /* Tamanho menor para encaixar bem em telas muito pequenas */
+  }
   .gallery-grid {
     grid-template-columns: 1fr;
   }
